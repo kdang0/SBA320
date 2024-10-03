@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <h1 id="title">console.log(<span className="quotes">"</span><span className="programming">Programming Jokes</span><span className="quotes">"</span>);</h1>
+      <h1 id="title">console.log(<span className="programming">programmingJokes</span>);</h1>
       <Carousel
         interval={null}
         activeIndex={item.activeIndex}
