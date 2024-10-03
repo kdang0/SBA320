@@ -1,4 +1,3 @@
-// import React from "react";
 import { useClipboard, useToast, Button} from '@chakra-ui/react';
 import { CopyIcon } from "@chakra-ui/icons";
 interface Joke{
@@ -14,8 +13,9 @@ export default function Joke({joke} : Joke) {
     toast({
       title: 'Copied!',
       status: 'success',
-      duration: 2000,
-      isClosable: true
+      duration: 800,
+      isClosable: false,
+      position: 'top'
     })
   }
   return (

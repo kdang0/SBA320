@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
@@ -10,7 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const url = "https://v2.jokeapi.dev/joke/Programming?type=single&amount=10";
 const urlSingle = "https://v2.jokeapi.dev/joke/Programming?type=single";
 
-
+interface Joke {
+  joke: string
+}
 
 function App() {
   const [item, setItem] = useState({
@@ -34,7 +34,7 @@ function App() {
     const data = response.data;
     console.log(response.data);
 
-    const jokes = data.jokes.map((joke: any) => joke.joke);
+    const jokes = data.jokes.map((joke: Joke) => joke.joke);
     setItem({ jokes: jokes, activeIndex: 0 });
   };
 
