@@ -19,8 +19,10 @@ export default function Joke({joke} : Joke) {
     })
   }
   return (
-    <div className="d-flex justify-content-center align-items-center imageContainer">
-    <h1 className="joke">{joke}</h1>
-    <Button colorScheme='yellow' className="copy" leftIcon={<CopyIcon/>} onClick={copy}>copy</Button>
+    <div>
+      <div className="d-flex justify-content-center align-items-center imageContainer">
+        <h1 className="joke">{joke}</h1>
+      </div>
+      <Button colorScheme='yellow' className="copy" leftIcon={<CopyIcon/>} onClick={copy}>copy</Button>
     </div>
 )};

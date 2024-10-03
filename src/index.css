@@ -32,7 +32,7 @@ h1{
   font-weight: 400;
   font-size: 60px;
   font-style: normal;
-  color: #ECBD00;
+  color: #faf089;
 }
 
 #title{
@@ -46,8 +46,9 @@ h1{
   font-family: "DM Sans", sans-serif;
   border-radius: 5px;
   border: none;
+  box-shadow: 5px 4px #FFCC00;
   color: #0e1111;
-  background-color: #ECBD00;
+  background-color: #faf089;
   transition: transform 0.15s ease-in;
 }
 
@@ -57,9 +58,9 @@ h1{
 
 .copy{
   position:absolute;
-  left:2rem;
+  left:100rem;
+  bottom:10rem;
   z-index: 4;
-  color:#ECBD00;
 }
 
 .quotes{
